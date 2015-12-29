@@ -1,0 +1,17 @@
+{
+  "name": "UnlimitedBlade",
+  "version": "0.1.0",
+  "description": "UnlimitedBlade（无限剑制）收集前端动画和特效",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fedeoo/UnlimitedBlade.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "del": "~2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-sass": "~2.1.1",
+    "require-dir": "~0.3.0",
+    "run-sequence": "~1.1.5"
+  }
+}
