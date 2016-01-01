@@ -4,14 +4,14 @@
 
 var gulp = require('gulp');
 gulp.task('browserSync', function() {
-	var browserSync = require('browser-sync');
-	var config = require('../config').browserSync;
+    var browserSync = require('browser-sync');
+    var config = require('../config').browserSync;
 
-	browserSync({
-		port: config.port,
-		open: false, // 默认值true, 禁用浏览器自动打开
-		server: {
-			baseDir: config.server.baseDir
-		}
-	});
+    browserSync({
+        port: config.port,
+        open: false, // 默认值true, 禁用浏览器自动打开
+        server: {
+            baseDir: config.server.baseDir
+        }
+    });
 });

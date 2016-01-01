@@ -1,4 +1,50 @@
+$radius: 100px;
+$underpainting: white;
+$pieColor: orange;
+$duration: 10s;
+
 .wrapper {
-    width: 100px;
-    margin: auto;
+    position: relative;
+    width: $radius * 2;
+    height: $radius * 2;
+    background: $underpainting;
+}
+@mixin subBox {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.pie {
+    @include subBox;
+    background: $pieColor;
+}
+
+.spinner {
+    border-radius: $radius 0 0 $radius;
+    transform-origin: 100% 50%;
+    animation: rota $duration linear infinite;
+}
+
+.filler {
+    left: 50%;
+    border-radius: 0 $radius $radius 0;
+    animation: opa $duration step-end infinite reverse;
+}
+
+.mask {
+    @include subBox;
+    background: inherit;
+    animation: opa $duration step-end infinite;
+    z-index: 9;
+}
+
+@keyframes rota {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+@keyframes opa {
+    0% {opacity: 1}
+    50%, 100% {opacity: 0}
 }
