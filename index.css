@@ -1,0 +1,25 @@
+body {
+     font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Hiragino Sans GB', 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+     line-height: 1.5;
+     font-size: 14px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+section {
+    margin-bottom: 20px;
+}
+section .list-info {
+    color: #999;
+}
+.list-info span {
+    margin-right: 10px;
+}
